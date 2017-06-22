@@ -1,0 +1,18 @@
+swagger: 2.0
+
+info:
+  title: {{ settings['service'] }}
+  description: This example returns documentation about this example.
+
+  version: {{ settings['version'] }}
+
+paths:
+  /:
+    get:
+      summary: Documentation
+      description: Returns ReDoc-powered documentation about this example.
+
+  /swagger.yaml:
+    get:
+      summary: Swagger File
+      description: Returns the Swagger file.
